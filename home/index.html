@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SONATA</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- swiper -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -79,8 +81,65 @@
                     <div id="home" class="tab-pane fade in active">
                         <img src="images/front.jpg" alt="">
                     </div>
-                    <div id="menu1" class="tab-pain fade">
-                        <img src="images/rare.jpg" alt="">
+                    <div id="menu1" class="tab-pane fade">
+                        <img src="images/rear.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section04 -->
+        <div class="section section05">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="images/model_img_space_01.webp" alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/model_img_space_02.webp" alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/model_img_space_03.webp" alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/model_img_space_04.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section05 -->
+        <div class="section section06">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/model_img_space_05.webp" alt=""></div>
+                                <div class="swiper-slide"><img src="images/model_img_space_06.webp" alt=""></div>
+                                <div class="swiper-slide"><img src="images/model_img_space_07.webp" alt=""></div>
+                                <div class="swiper-slide"><img src="images/model_img_space_08.webp" alt=""></div>
+                                <div class="swiper-slide"><img src="images/model_sonata_dn8_space_interior_colors_navy_napa.webp" alt=""></div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section06 -->
+        <div class="section section07">
+            <h1 class="text-center">
+                세계 최초로 연속 가변 밸브 듀레이션 (CVVD) 기술 적용
+            </h1>
+            <p class="text-center">
+                엔진 밸브의 열고 닫히는 시간을 엔진 상태에 따라 최적으로 제어하는 연속 가변 밸브 듀레이션 (CVVD) 기술을 적용하여 성능과 연비를 크게 향상시켰습니다.
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="images/sonata.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -90,9 +149,20 @@
 
     <!-- jquery 3.2.1 -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- main js -->
     <script type="text/javascript">
+        // swiper
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        // background images
         var images=["bg-img01.jpg", "bg-img02.jpg", "bg-img03.jpg"];
         $(function(){
             var i=0;
