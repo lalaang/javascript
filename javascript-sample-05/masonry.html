@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masonry</title>
+    <style>
+        .sub_wrap{
+            width: 30%;
+            padding: 1%;
+        }
+        .sub_wrap>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="all_wrap">
+        <div class="sub_wrap">
+            <img src="images/photo01.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo02.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo03.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo04.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo05.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo06.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo07.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo08.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo09.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo10.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo11.jpg" alt="">
+        </div>
+        <div class="sub_wrap">
+            <img src="images/photo12.jpg" alt="">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        $(function(){
+            $('.all_wrap').masonry({
+                // options...
+                itmeSelector: '.sub_wrap',
+                fitwidth: true
+            });
+        });
+    </script>
+</body>
+<!-- https://masonry.desandro.com/ -->
+</html>
