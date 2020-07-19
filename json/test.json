@@ -1,0 +1,45 @@
+{
+    "name": "식빵",
+    "family": "웰시코기",
+    "age": 1,
+    "weight": 2.14
+}
+// json: object 방식
+<dog>
+    <name>식빵</name>
+    <family>웰시코기</family>
+    <age>1</age>
+    <weight>2.14</weight>
+</dog>
+// xml
+// json과 xml 모두 대문자 쓰면 안 됨. json은 주석 권장사항 아님.
+
+1. JSON 데이터는 이름과 값의 쌍으로 이루어집니다.
+
+2. JSON 데이터는 쉼표(,)로 나열됩니다.
+
+3. 객체(object)는 중괄호 ({})로 둘러싸 표현합니다.
+
+4. 배열(array)은 대괄호([])로 둘러싸 표현합니다.
+
+"dog": [
+    {"name": "식빵", "family": "웰시코기", "age": 1, "weight": 2.14},
+    {"name": "콩콩", "family": "포메라니안", "age": 2, "weight": 2.5},
+    {"name": "젤리", "family": "푸들", "age": 7, "weight": 3.1}
+]
+
+JSON에서 데이터 이름과 대응되는 값으로 숫자, 문자열, 불리언뿐만 아니라 또 다른 객체가 올 수도 있습니다.
+만약 데이터의 값이 객체라면 객체 안에 객체가 포함되는 계층 구조가 형성됩니다.
+
+{
+    "dog": {
+        "name": "식빵",
+        "family": "웰시코기",
+        "age": 1,
+        "weight": 2.14,
+        "owner": {
+            "ownerName": "홍길동",
+            "phone": "01012345678"
+        }
+    }
+}

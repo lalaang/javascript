@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <h1>주기적으로 Ajax 요청하기</h1>
+    <p id="text"></p>
+
+    <script>
+        function sendRequest(){
+            var httpRequest=new XMLHttpRequest();
+            httpRequest.onreadystatechange=function(){
+                if(httpRequest.readyState==XMLHttpRequest.DONE && httpRequest.status==200){
+                    document.getElementById("text").innerHTML=httpRequest.responseText;
+                }
+            };
+            httpRequest.open("GET", "php/test.php");
+            httpRequest.send();
+        }
+        window.setInterval("sendRequest()", 500);   // 매 0.5초마다 Ajax 요청을 보냄.
+    </script>
+</body>
+</html>

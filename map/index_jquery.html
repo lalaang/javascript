@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <h1>Ajax는 그 자체가 별도의 새로운 언어는 아닙니다.<br>
+    HTML, CSS, 자바스크립트, DOM, XML 등 기존에 사용되던 여러 기술을 함께 사용하는 새로운 개발 기법입니다.</h1>
+    <p>Ajax는 웹페이지 전체를 다시 로딩하지 않고도, 웹 페이지의 일부분만을 갱신할 수 있게 해줍니다.<br>
+    즉 Ajax를 이용하면 백그라운드 영역에서 서버와 통신하여, 그 결과를 웹 페이지의 일부분에만 표시할 수 있습니다.</p>
+    <hr>
+    <p id="text">이 단락에 다른 텍스트를 불러와보죠!</p>
+    <button id="requestBtn">데이터 불러오기!</button>
+
+    <script>
+        $(function(){
+            $("#requestBtn").on("click", function(){
+                $("#text").load("test.txt");
+            })
+        })
+    </script>
+</body>
+</html>
