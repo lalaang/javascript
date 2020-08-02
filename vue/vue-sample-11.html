@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <circle cx="100" cy="75" r="30" fill="lightpink"></circle>
+        </svg>
+        <input type="range" min="0" max="100">
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                radius: 50
+            }
+        });
+    </script>
+</body>
+</html>

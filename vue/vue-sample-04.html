@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <p>[v-if]: v-if는, 태그에 붙는 속성으로, 해당 태그에 바인딩된 VUE객체의 data 안에 있는 키의 값이 true인가 false인가에 따라서, 해당 태그가 생성되는지 소멸되는지를 나눕니다.</p>
+    <div id="app">
+        <h1 v-if="visible">존재하는 태그</h1>
+        <h1 v-if="invisible">존재하지 않는 태그</h1>
+    </div>
+    <script>
+        var firstApp=new Vue({
+            el: '#app',
+            data: {
+                visible: true,
+                invisible: false
+            }
+        });
+    </script>
+</body>
+</html>

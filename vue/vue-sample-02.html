@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div id="app">
+        <button v-on:click="add()">버튼</button>
+        <ul>
+            <li v-for="n in numbers">{{ n }}</li>
+        </ul>
+    </div>
+    <script>
+        var firstApp=new Vue({
+            el: '#app',
+            data: {
+                numbers: [1,2,3,4,5]
+            },
+            methods: {
+                add: function(){
+                    var lastnum=this.numbers[this.numbers.length-1];
+                    lastnum +=1;
+                    this.numbers.push(lastnum);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
