@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gnb {
+  /* background: #90c136; */
+  width: 898px;
+  margin: auto;
+}
+
+.gnb>li {
+  display: inline-block;
+  /* background: #4bd2d6; */
+  width: 175px;
+  height: 88px;
+  line-height: 88px;
+  /* 줄높이 */
+  text-align: center;
+  border-top: 3px solid #fff;
+}
+
+.navi{
+  /* background: #eec8e3; */
+}
+
+.gnb>li>a{
+  font-size: 20px;
+  /* 글자 크기 */
+  font-weight: bold;
+  /* 100~900, bold */
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.gnb>li>a:hover{
+  /* color: #00ad83; */
+  /* display: block; */
+  /* height: 1000px; */
+  /* background: rgb(83, 108, 113); */
+  /* border-bottom: 1px solid #00ad83; */
+  /* top left bottom right */
+}
+/* 마우스 갖다댔을 때 변경되는 것 */
+
+.gnb>li:hover{
+  color: #00ad83;
+  border-top: 3px solid #00ad83;
+  /* border-style: none / hidden / dotted / dashed / solid / double / groove / ridge / inset / outset / initial / inherit */
+}

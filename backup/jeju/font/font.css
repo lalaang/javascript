@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'NanumSquare_acR';
+  src: url('NanumSquare_acR.eot');
+  src: url('NanumSquare_acR.eot?#iefix') format('embedded-opentype'),
+       url('NanumSquare_acR.woff') format('woff'),
+       url('NanumSquare_acR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

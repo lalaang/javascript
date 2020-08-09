@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>선택자</title>
+  <style type="text/css">
+    h1 {
+      color: blue;
+      font-size: 24px;
+    }
+    .box1 {
+      color: #fff;
+    }
+    #box2 {
+      color: red;
+    }
+    .box3 {
+      font-size: 50px;
+    }
+    h2,h3,p {
+      color:#ccc;
+    }
+    *{
+      font-weight: bold;
+    }
+    ul>li{
+      color: green;
+    }
+    ol p{
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>html&CSS</h1>
+  <h1>하이미디어</h1>
+  <!-- h1태그는 대제목이다 -->
+  <div class="box1 box3">
+    클래스 지정해서 선택
+  </div>
+  <div id="box2">
+    아이디를 지정해서 선택
+  </div>
+  <h2>한 가지가 아닌</h2>
+  <h3>여러 개를</h3>
+  <p>그룹으로 선택</p>
+  <p>*(전체선택자)</p>
+  <ul>
+    <li>ul은 li의 부모요소</li>
+    <li>li는 ul의 자식요소</li>
+  </ul>
+  <ol>
+    <p>자식요소뿐만 아니라</p>
+    <li>
+      <p>자식요소의 자식요소도 해당한다.</p>
+    </li>
+  </ol>
+  <table>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+</body>
+
+</html>

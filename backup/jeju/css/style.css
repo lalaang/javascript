@@ -1,0 +1,286 @@
+@import url('reset.css');
+@import url('../font/font.css');
+
+body{
+    font-family: 'NanumSquare_acR';
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.gnb{
+    float: left;
+    padding: 26px 0 0 40px;
+}
+.gnb a{
+    color: #111;
+    font-weight: 700;
+}
+.top-logo{
+    float: left;
+}
+.gnb>ul{
+    float: left;
+    padding-left: 80px;
+}
+.gnb>ul>li{
+    float: left;
+    padding-top: 6px;
+    color: #111111;
+    font-weight: 500;
+}
+.gnb>ul>li+li{
+    padding-left: 40px;
+}
+.util{
+    float: right;
+    padding: 24px 40px 0;
+}
+.util>ul>li{
+    float: left;
+    position: relative;
+    padding: 0 12px;
+}
+.util>ul>li+li::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    width: 1px;
+    height: 20px;
+    margin-top: -10px;
+    background-color: #e9e9e9;
+}
+.util a{
+    color: #111;
+    font-size: 14px;
+    color: #999;
+    line-height: 32px;
+}
+.btn{
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+}
+.btn.sm{
+    height: 32px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.btn.btn-primary{
+    position: relative;
+    background-color: #00aa91;
+    border-color: #00aa91;
+    color: #ffffff;
+    border: 0;
+}
+.txt-primary{
+    color: #00aa91 !important;
+    /* !important 무조건 제일 먼저! 우선! 이라는 뜻 */
+}
+header{
+    min-width: 1125px;
+    /* min-width / max-width / width */
+}
+.header-area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2); 
+    -ms-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    /* 메뉴바 높이 80px로 하려고 일부러 border 안 쓰고 그림자로 처리. border 쓰면 81px 되고 그렇다고 안으로 border 처리하면 다 틀어짐 */
+}
+/* 메뉴 끝 */
+
+section{
+    line-height: 1.5;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 630px;
+    margin-top: 80px;
+    background: url('../images/bg_visual_01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* 배너 끝 */
+
+.notice-wrap{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.notice-wrap:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.conts-area{
+    width: 960px;
+    /* 완전 센터는 아니지만 센터처럼 보이게 함.
+    보통 많이 쓰는 사이즈 768 960 1024 1680 1920 */
+    margin: 0 auto;
+}
+.notice-wrap .tit{
+    float: left;
+    width: 100px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+.regular-order-wrap{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.notice-wrap a{
+    float: right;
+    width: 860px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit; 
+}
+.notice-wrap a:hover {
+	color: #111111;
+	text-decoration: underline;
+}
+.regular-order-wrap .detail>li{
+    float: left;
+    width: 320px;
+    padding-top: 234px;
+    /* 그냥 이미지일 땐 padding-top 글자가 들어가면 height */
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-align: center;
+}
+.regular-order-wrap .detail>li:first-child{
+    background-image: url(../images/bg_regular_01.png);
+}
+.regular-order-wrap .detail>li:nth-child(2){
+    background-image: url(../images/bg_regular_02.png);
+}
+.regular-order-wrap .detail>li:last-child{
+    background-image: url(../images/bg_regular_03.png);
+}
+.title{
+    font-size: 32px;
+    color: #111111;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -.5px;
+}
+.btn-sec{
+text-align: center;
+}
+.btn.lg{
+    height: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 54px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-sec{
+    margin-top: 350px;
+}
+.main-txt{
+    padding-top: 100px;
+}
+.introduction .conts-area {
+    padding-top: 80px;
+    position: relative;
+}
+
+.introduction {
+    width: 100%;
+    height: 720px;
+    background: url(../images/bg_introduction.png) no-repeat 50% 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    background-color: #00ab6a;
+    border-radius: 50%;
+    animation: dot-effec 1.5s ease-in-out infinite;
+}
+@keyframes dot-effec{
+    0%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+    }}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 171, 107, 0.12);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    animation: record-lg 1.5s ease-in-out infinite;
+}
+@keyframes record-lg{
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.point{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+.point.point-1{
+    top: 336px;
+    left: 521px;
+}
+.point.point-2{
+    top: 386px;
+    left: 440px;
+}
+.point.point-3{
+    top: 535px;
+    left: 460px;
+}
+.point.point-4{
+    top: 577px;
+    left: 514px;
+}

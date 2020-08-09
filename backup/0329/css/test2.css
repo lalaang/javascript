@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* margin: 바깥에 여백 주는 것 padding: 안에 여백 주는 것 */
+}
+section{
+    width: 100%;
+    height: 500px;
+    background-color: coral;
+}
+.brand{
+    width: 90%;
+    margin: auto;
+}
+.thumb{
+    width: 30%;
+    height: 250px;
+    /* background-color: brown; */
+    float: left;
+    margin: 1.6%;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.bg-blue{
+    background-color: blue;
+}
+/* margin: all */
+/* margin: t/b l/r */
+/* margin: t/b left right */
+/* margin: top right bottom left */

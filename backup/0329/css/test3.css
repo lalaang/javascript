@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+display: inline-block;
+float: left;
+자식요소를 선택해서 결정!
+*/
+.navi>li>a{
+    color: inherit;
+    text-decoration: none;
+}
+.navi>li{
+    list-style: none;
+    float: left;
+    width: 175px;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    /* 크기값이 있는 곳에 써야 어디가 가운데인지 알 수 있음 */
+    border: 1px solid violet;
+    box-sizing: border-box;
+}
+/* alt+방향키는 순서 바꾸는 것. atom은 ctrl+방향키. */
+.navi{
+
+}
+nav{
+    width: 900px;
+    margin: auto;
+}
+header{
+    height: 88px;
+    background-color: pink;
+}

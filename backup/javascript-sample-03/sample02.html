@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Ojbect Model)</title>
+</head>
+<body>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+    <button onclick="setColor();">Click</button>
+    <script>
+        // var li=document.getElementsByTagName('li'); //ES5
+
+        // var li=document.querySelector('li'); //tag 안 됨.
+        // var li=document.querySelectorAll('li');
+        // li[1].style.backgroundColor="red";
+        // li[1].style.color="white";
+
+        function setColor(){
+            var li=document.querySelectorAll("li");
+
+            for(var i=0; i<li.length; i++){
+                li[i].style.color="green";
+                li[i].style.backgroundColor="orange";
+            }
+        }
+    </script>
+</body>
+</html>

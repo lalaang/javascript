@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>font</title>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean');
+    @import url('https://fonts.googleapis.com/css?family=Single+Day&display=swap&subset=korean');
+
+    .nanum {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    .single {
+      font-family: 'Single Day', cursive;
+    }
+
+    .px {
+      font-size: 32px;
+    }
+
+    .pt {
+      font-size: 150%;
+    }
+
+    .px2 {
+      font-size: 12px;
+    }
+
+    .pt2 {
+      font-size: 70%;
+    }
+
+    .f_w1 {
+      font-weight: 400;
+      < !-- 기본 -->
+    }
+
+    .f_w2 {
+      font-weight: bold;
+      < !-- 볼드 -->
+    }
+
+    .f_w3 {
+      font-weight: 100;
+      < !-- 제일 얇은 -->
+    }
+
+    .f_w4 {
+      font-weight: 700;
+      < !-- 볼드와 같다 -->
+    }
+
+    .f_w5 {
+      font-weight: 900;
+      < !-- 제일 두꺼운 -->
+    }
+
+    .f_s1 {
+      font-style: normal;
+    }
+
+    .f_s2 {
+      font-style: italic;
+    }
+
+    .f_s3 {
+      font-style: oblique;
+    }
+
+    .f_v1 {
+      font-variant: small-caps;
+    }
+
+    .f_c1 {
+      color: #fff;
+    }
+
+    .f_c2 {
+      color: #000;
+    }
+
+    .f_c3 {
+      color: green;
+    }
+
+    .f_c4 {
+      color: silver;
+    }
+
+    .f_c5 {
+      color: rgb(255, 0, 0);
+    }
+
+    .f_c6 {
+      color: rgb(0, 0, 255);
+    }
+
+    .l_s1 {
+      letter-spacing: -10px;
+    }
+
+    .l_s2 {
+      letter-spacing: normal;
+    }
+
+    .l_s3 {
+      letter-spacing: 10px;
+    }
+
+    .w_s1 {
+      word-spacing: -10px;
+    }
+
+    .w_s2 {
+      word-spacing: normal;
+    }
+
+    .w_s3 {
+      word-spacing: 10px;
+    }
+
+    .t_i1 {
+      text-indent: 10px;
+    }
+    .t_a1 {
+      text-align: left;
+    }
+    .t_a2 {
+      text-align: center;
+    }
+    .t_a3 {
+      text-align: right;
+    }
+    .t_a4 {
+      text-align: justify;
+    }
+    .t_d1 {
+      text-decoration: line-through;
+    }
+    .t_d2 {
+      text-decoration: overline;
+    }
+    .t_d3 {
+      text-decoration: underline;
+    }
+    .t_d4, a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .t_t1 {
+      text-transform: capitalize;
+    }
+    .t_t2 {
+      text-transform: uppercase;
+    }
+    .t_t3 {
+      text-transform: lowercase;
+    }
+    .l_h1 {
+      line-height: 40px;
+    }
+    .l_h2 {
+      line-height: 1.5;
+    }
+    .l_h3 {
+      line-height: 200%;
+    }
+    .t_s1 {
+      text-shadow: 10px 10px 2px red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>font-family 글꼴 설정</h1>
+  <p>기본 글꼴</p>
+  <p class="nanum">Nanum Gothic 글꼴로 적용</p>
+  <p class="single">single day 글꼴로 적용</p>
+  <hr>
+  <h1>글씨 크기</h1>
+  <p>기본 글씨 크기</p>
+  <p class="px">px로 적용</p>
+  <p class="pt">%로 적용</p>
+  <p class="px2">Lorem ipsum dolor sit amet</p>
+  <p class="pt2">Lorem ipsum dolor sit amet</p>
+  <hr>
+  <h1>글씨 굵기</h1>
+  <p>기본 글씨 굵기</p>
+  <p class="f_w1">기본 굵기</p>
+  <p class="f_w2">볼드 굵기</p>
+  <p class="f_w3">제일 얇은 굵기</p>
+  <p class="f_w4">볼드와 같은 굵기</p>
+  <p class="f_w5">제일 굵은 굵기</p>
+  <hr>
+  <h1>기울기</h1>
+  <p class="f_s1">일반적(normal)인 스타일의 단락입니다</p>
+  <p class="f_s2">이탤릭체(italic) 스타일의 단락입니다</p>
+  <p class="f_s3">오블릭크(oblique) 스타일의 단락입니다</p>
+  <hr>
+  <h1>소문자를 대문자로 변경</h1>
+  <p class="f_v1">Lorem ipsum dolor sit amet, Cons ectetuer adipiscing elit</p>
+  <hr>
+  <h1>color</h1>
+  <p class="f_c1">#fff</p>
+  <p class="f_c2">#000</p>
+  <p class="f_c3">green</p>
+  <p class="f_c4">silver</p>
+  <!-- 색상 이름 -->
+  <p class="f_c5">rgb(255, 0, 0)</p>
+  <p class="f_c6">rgb(0, 0, 255)</p>
+  <!-- rgb값 -->
+  <hr>
+  <h1>letter-spacing</h1>
+  <!-- 글자와 글자 사이의 간격 -->
+  <p>글자 사이 간격</p>
+  <p class="l_s1">글자 간격을 줄여봅시다</p>
+  <p class="l_s2">기본적인 글자 간격은 이 정도입니다</p>
+  <p class="l_s3">글자 간격을 늘려봅시다</p>
+  <hr>
+  <h1>word-spacing</h1>
+  <!-- 단어와 단어 사이의 간격 -->
+  <p>단어 사이 간격</p>
+  <p class="w_s1">단어 사이의 간격을 줄여봅시다</p>
+  <p class="w_s2">기본적인 단어 사이 간격은 이 정도입니다</p>
+  <p class="w_s3">단어 사이의 간격을 늘려봅시다</p>
+  <hr>
+  <h1>text-indent</h1>
+  <!-- 들여쓰기 -->
+  <p class="t_i1">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+  <hr>
+  <h1>text-align</h1>
+  <p class="t_a1">왼쪽정렬<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla hendrerit turpis ac dignissim. Nulla blandit scelerisque purus, vitae lobortis mauris sodales in. Fusce cursus posuere diam, in mattis felis sodales at. Mauris vel erat tempor, ultrices velit auctor, maximus lacus. Proin eu condimentum tellus, vitae blandit nulla. Donec eleifend risus a tincidunt ultricies. Proin convallis orci a dolor porttitor, ac tempor ipsum tincidunt. Morbi eget euismod sem. Sed maximus tellus nec tristique hendrerit. Etiam nunc ex, facilisis ac tincidunt vitae, vestibulum ac ante. Morbi aliquet neque neque, vel ornare diam eleifend a. Donec nisl tellus, eleifend sed nisi at, vestibulum maximus ante.</p>
+  <p class="t_a2">가운데정렬<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla hendrerit turpis ac dignissim. Nulla blandit scelerisque purus, vitae lobortis mauris sodales in. Fusce cursus posuere diam, in mattis felis sodales at. Mauris vel erat tempor, ultrices velit auctor, maximus lacus. Proin eu condimentum tellus, vitae blandit nulla. Donec eleifend risus a tincidunt ultricies. Proin convallis orci a dolor porttitor, ac tempor ipsum tincidunt. Morbi eget euismod sem. Sed maximus tellus nec tristique hendrerit. Etiam nunc ex, facilisis ac tincidunt vitae, vestibulum ac ante. Morbi aliquet neque neque, vel ornare diam eleifend a. Donec nisl tellus, eleifend sed nisi at, vestibulum maximus ante.</p>
+  <p class="t_a3">오른쪽정렬<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla hendrerit turpis ac dignissim. Nulla blandit scelerisque purus, vitae lobortis mauris sodales in. Fusce cursus posuere diam, in mattis felis sodales at. Mauris vel erat tempor, ultrices velit auctor, maximus lacus. Proin eu condimentum tellus, vitae blandit nulla. Donec eleifend risus a tincidunt ultricies. Proin convallis orci a dolor porttitor, ac tempor ipsum tincidunt. Morbi eget euismod sem. Sed maximus tellus nec tristique hendrerit. Etiam nunc ex, facilisis ac tincidunt vitae, vestibulum ac ante. Morbi aliquet neque neque, vel ornare diam eleifend a. Donec nisl tellus, eleifend sed nisi at, vestibulum maximus ante.</p>
+  <p class="t_a4">양쪽정렬<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla hendrerit turpis ac dignissim. Nulla blandit scelerisque purus, vitae lobortis mauris sodales in. Fusce cursus posuere diam, in mattis felis sodales at. Mauris vel erat tempor, ultrices velit auctor, maximus lacus. Proin eu condimentum tellus, vitae blandit nulla. Donec eleifend risus a tincidunt ultricies. Proin convallis orci a dolor porttitor, ac tempor ipsum tincidunt. Morbi eget euismod sem. Sed maximus tellus nec tristique hendrerit. Etiam nunc ex, facilisis ac tincidunt vitae, vestibulum ac ante. Morbi aliquet neque neque, vel ornare diam eleifend a. Donec nisl tellus, eleifend sed nisi at, vestibulum maximus ante.</p>
+  <hr>
+  <h1>text-decoration</h1>
+  <p class="t_d1">글자 중간에 선을 만듭니다</p>
+  <p class="t_d2">글자 위에 선을 만듭니다</p>
+  <p class="t_d3">글자 아래 선을 만듭니다</p>
+  <p class="t_d4">선을 만들지 않습니다</p>
+  <a href="https://www.naver.com">네이버로 바로가기</a>
+  <hr>
+  <h1>text-transform</h1>
+  <p class="t_t1">단어의 첫번째 글자를 대문자로 바꿉니다<br>Lorem ipsum dolor sit amet</p>
+  <p class="t_t2">모든 글자를 대문자로 바꿉니다<br>Lorem ipsum dolor sit amet</p>
+  <p class="t_t3">모든 글자를 소문자로 바꿉니다<br>Lorem ipsum dolor sit amet</p>
+  <hr>
+  <h1>line-height</h1>
+  <p class="l_h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla hendrerit turpis ac dignissim. Nulla blandit scelerisque purus, vitae lobortis mauris sodales in. Fusce cursus posuere diam, in mattis felis sodales at. Mauris vel erat tempor, ultrices velit auctor, maximus lacus. Proin eu condimentum tellus, vitae blandit nulla. Donec eleifend risus a tincidunt ultricies. Proin convallis orci a dolor porttitor, ac tempor ipsum tincidunt. Morbi eget euismod sem. Sed maximus tellus nec tristique hendrerit. Etiam nunc ex, facilisis ac tincidunt vitae, vestibulum ac ante. Morbi aliquet neque neque, vel ornare diam eleifend a. Donec nisl tellus, eleifend sed nisi at, vestibulum maximus ante.</p>
+  <p class="l_h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla hendrerit turpis ac dignissim. Nulla blandit scelerisque purus, vitae lobortis mauris sodales in. Fusce cursus posuere diam, in mattis felis sodales at. Mauris vel erat tempor, ultrices velit auctor, maximus lacus. Proin eu condimentum tellus, vitae blandit nulla. Donec eleifend risus a tincidunt ultricies. Proin convallis orci a dolor porttitor, ac tempor ipsum tincidunt. Morbi eget euismod sem. Sed maximus tellus nec tristique hendrerit. Etiam nunc ex, facilisis ac tincidunt vitae, vestibulum ac ante. Morbi aliquet neque neque, vel ornare diam eleifend a. Donec nisl tellus, eleifend sed nisi at, vestibulum maximus ante.</p>
+  <p class="l_h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla hendrerit turpis ac dignissim. Nulla blandit scelerisque purus, vitae lobortis mauris sodales in. Fusce cursus posuere diam, in mattis felis sodales at. Mauris vel erat tempor, ultrices velit auctor, maximus lacus. Proin eu condimentum tellus, vitae blandit nulla. Donec eleifend risus a tincidunt ultricies. Proin convallis orci a dolor porttitor, ac tempor ipsum tincidunt. Morbi eget euismod sem. Sed maximus tellus nec tristique hendrerit. Etiam nunc ex, facilisis ac tincidunt vitae, vestibulum ac ante. Morbi aliquet neque neque, vel ornare diam eleifend a. Donec nisl tellus, eleifend sed nisi at, vestibulum maximus ante.</p>
+  <hr>
+  <h1>text-shadow</h1>
+  <p class="t_s1">텍스트 그림자 효과</p>
+</body>
+</html>

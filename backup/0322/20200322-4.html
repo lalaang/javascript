@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>table&input</title>
+</head>
+
+<body>
+  <form>
+    <table border="1">
+      <tr>
+        <th colspan="2">기본정보</th>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="이름" value=""></td>
+      </tr>
+      <tr>
+        <td rowspan="2">아이디</td>
+        <td><input type="text" name="id" value="">
+          <input type="submit" name="" value="중복확인"></td>
+      </tr>
+      <tr>
+        <td>6~20자의 영문 소문자, 숫자만 가능. 영문소문자 시작.</td>
+      </tr>
+      <tr>
+        <td rowspan="2">비밀번호</td>
+        <td><input type="password" name="pw" value=""></td>
+      </tr>
+      <tr>
+        <td>6~20자의 영문 대소문자와 숫자, 특수문자를 사용할 수 있으며,<br>최소 2종류 이상을 조합해야 합니다.<br>허용 특수문자 {}[]/?.|)*~`!^-_+#$%=(</td>
+      </tr>
+      <tr>
+        <td>비밀번호 확인</td>
+        <td><input type="password" name="pw" value=""></td>
+      </tr>
+      <tr>
+        <td>영문이름</td>
+        <td>성 <input type="text" name="name" value=""> 이름 <input type="text" name="name" value=""></td>
+      </tr>
+      <tr>
+        <td>연락처</td>
+        <td><select class="" name="">
+            <option value="">02 서울</option>
+            <option value="">031 경기</option>
+            <option value="">032 인천</option>
+            <option value="">033 강원</option>
+            <option value="">041 충남</option>
+          </select>-<input type="tel" name="" value="">-<input type="tel" name="" value="">
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">휴대전화</td>
+        <td><select class="" name="">
+            <option value="">010</option>
+            <option value="">011</option>
+            <option value="">016</option>
+            <option value="">017</option>
+            <option value="">019</option>
+          </select>-<input type="tel" name="" value="">-<input type="tel" name="" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>수신동의와 별도로 비밀번호 찾기에 사용되므로 반드시 입력바랍<br>니다.
+          <br>
+          <input type="checkbox" name="" value="">수신 동의합니다</td>
+      </tr>
+      <tr>
+        <td>성별</td>
+        <td><input type="radio" name="성별" value="">남자
+          <input type="radio" name="성별" value="">여자</td>
+      </tr>
+      <tr>
+        <td rowspan="2">이메일</td>
+        <td><input type="email" name="" value=""></td>
+      </tr>
+      <tr>
+        <td>수신동의와 별도로 비밀번호 찾기에 사용되므로 반드시 입력바랍<br>니다.
+          <br>
+          <input type="checkbox" name="" value="">수신 동의합니다</td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
