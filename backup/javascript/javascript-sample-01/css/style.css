@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+/* .navi>li{
+    float: left;
+    margin: 20px 10px;
+}
+.navi{
+    background-color: lightcyan;
+    height: 80px;
+}
+.subNav{
+    display: none;
+    background-color: lightpink;
+}
+.subNav>li{
+    margin: 10px 0;
+    text-align: center;
+} */
+
+header{
+    width: 1200px;
+    margin: 0 auto;
+}
+.navi{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.sub-navi{
+    display: none;
+    position: absolute;
+    margin: 20px 0;
+}
+.sub-navi>li{
+    margin: 10px 0;
+}

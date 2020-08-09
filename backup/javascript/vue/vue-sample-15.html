@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="handleClick">Count up</button>
+        <button v-on:click="show=!show">표시/비표시</button>
+        <span ref="count" v-if="show">0</span>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true
+            },
+            methods: {
+                handleClick(){
+                    var count = this.$refs.count
+                    if(count){
+                        count.innerText=parseInt(count.innerText, 10) + 1
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

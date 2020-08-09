@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <p>[v-show]: v-if와 같은 사용법과 비슷한 기능을 가졌습니다. 다만, false 상태일 때, 태그 자체는 존재하는 채로, 보이지만 않는 것입니다.</p>
+    <div id="app">
+        <h1 v-show="visible">보이는 태그</h1>
+        <h1 v-show="invisible">안 보이는 태그</h1>
+    </div>
+    <script>
+        var firstApp=new Vue({
+            el: '#app',
+            data: {
+                visible: true,
+                invisible: false
+            }
+        });
+    </script>
+</body>
+</html>
